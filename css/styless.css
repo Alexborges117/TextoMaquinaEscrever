@@ -1,3 +1,4 @@
+/*Alinhando texto*/
 body{
     display: flex;
     flex-direction: column;
@@ -6,7 +7,8 @@ body{
     justify-content: center;
     margin: 40vh;
 }
-
+/*Iniciando o texto dando como width o mesmo numero de caracteres pois  tem que ter o mesmo numero para que a 
+barra passe exatamemnte por cima sem das letrars e nao parar nem antes e nem depois*/
 p{
     font-size: 30px;
     font-family: monospace;
@@ -17,13 +19,13 @@ p{
     animation: typing 2s steps(10),
     blinking 0.5s infinite step-end alternate;
 }
-
+/*Animação dos caracters*/
 @keyframes typing{
     from {
     width: 0;
     }
 }
-
+/*Animação da barra*/
 @keyframes blinking{
     50% {
         border-color: transparent;
